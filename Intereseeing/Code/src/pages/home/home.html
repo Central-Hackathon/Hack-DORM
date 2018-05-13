@@ -1,0 +1,34 @@
+<ion-content padding no-bounce class="scroll-content">
+
+
+    <button ion-button menuToggle clear>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+  <button ion-button round clear class="QRcode"> </button>
+
+  <ion-img class="backgroundImg" src="../assets/imgs/{{image}}"></ion-img>
+
+  <ion-img class="redPin" src="../../assets/icon/redpin.png"></ion-img>
+
+  <div class="topText">
+    εξερευνήστε τη:
+  </div>
+
+  <div class="bottomText">
+    {{location}}
+  </div>
+
+  <ion-img class="searchGlass" src="../../assets/icon/glass.svg"></ion-img>
+
+  <ion-grid class="buttonGrid">
+    <ion-row>
+      <ion-col>
+        <button ion-button large outline (click)="categoryClick()">category</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large outline>{{map}}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
